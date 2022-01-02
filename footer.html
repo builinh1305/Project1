@@ -1,0 +1,229 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="https://kit.fontawesome.com/8793179afa.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" type="text/css" href="stylesheet.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <style>
+        .footer {
+            background-color: #252525;
+        }
+        .container-fluid {
+            padding: 4rem 8rem !important;
+        }
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        .fl {
+            overflow: auto;
+        }
+        .fl-l {
+            float: left;
+            width: 50%;
+        }
+        ul {
+            list-style: none;
+        }
+        .ftrow {
+            display: flex;
+            flex-wrap: wrap;
+        }
+        .footer-col {
+            width: 25%;
+            padding: 0 15px;
+        }
+        .footer-col p {
+            color: #ffff;
+            line-height: 22px;
+        }
+        .footer-col h4 {
+            font-size: 18px;
+            color: #ffff;
+            text-transform: capitalize;
+            margin-bottom: 30px;
+            position: relative;
+        }
+        .footer-col h4::before {
+            content: '';
+            position: absolute;
+            left: 0;
+            bottom: -10px;
+            background-color: #7dcf7d;
+            height: 2px;
+            width: 80px;
+            box-sizing: border-box;
+        }
+        .footer-col ul li:not(:last-child){
+            margin-bottom: 10px;
+        }
+        .footer-col ul li a{
+            font-size: 16px;
+            text-transform: capitalize;
+            color: #ffff;
+            text-decoration: none;
+            display: block;
+        }
+        .footer-col ul li a:hover {
+            padding-left: 10px;
+        }
+        .footer-col .social-links:not(:last-child) {
+            margin-bottom: 30px;
+        }
+        .footer-col .social-links a {
+            display: inline-block;
+            height: 40px;
+            width: 40px;
+            background-color: #ffff;
+            margin: 0 10px 10px 0;
+            text-align: center;
+            line-height: 50px;
+            border-radius: 50%;
+        }
+        .fa-pinterest-square, .fa-youtube, .fa-facebook-square, .fa-twitter-square, .fa-line, .fa-instagram {
+            font-size: 30px;
+            color: rgb(21, 108, 223);
+        }
+        .footer-col .social-links a:hover {
+            background-color: #242424;
+        }
+        .col-md-3 {
+            padding: 1%;
+        }
+        .colum {
+    padding: 1%;
+}
+.show {
+    display: none;
+}
+.colum img {
+    width: 100%;
+}
+.showhide {
+    display: none;
+}
+    </style>
+    <script>
+        $(document).ready(function(){
+             $("#toggle").click(function() {
+                $(".show").toggle(1000);
+            });
+            $("#img").click(function() {
+                $(".showhide").toggle(1000);
+            });
+    });
+    </script>
+</head>
+<body>
+    <div class="container-fluid">
+        <div class="row">
+            <div class="col-xl-3 col-md-6 col-sm-12 colum">
+                <img src="img/mb10.jpg" id="img">
+                <p class="showhide">Show Hide</p>
+            </div>
+            <div class="col-xl-3 col-md-6 col-sm-12 colum">
+                <img src="img/mb9.jpg">
+            </div>
+            <div class="col-xl-3 col-md-6 col-sm-12 colum">
+                <img src="img/mb8.jpg">
+            </div>
+            <div class="col-xl-3 col-md-6 col-sm-12 colum">
+                <img src="img/mb7.jpg">
+            </div>
+            
+                    <div class="col-xl-3 col-md-6 col-sm-12 colum show">
+                        <img src="img/mb7.jpg">
+                    </div>
+                    <div class="col-xl-3 col-md-6 col-sm-12 colum show">
+                        <img src="img/mb9.jpg">
+                    </div>
+                    <div class="col-xl-3 col-md-6 col-sm-12 colum show">
+                        <img src="img/mb8.jpg">
+                    </div>
+                    <div class="col-xl-3 col-md-6 col-sm-12 colum show">
+                        <img src="img/mb7.jpg">
+                    </div>
+                    <div class="col-xl-3 col-md-6 col-sm-12 colum show">
+                        <img src="img/mb7.jpg">
+                    </div>
+                    <div class="col-xl-3 col-md-6 col-sm-12 colum show">
+                        <img src="img/mb9.jpg">
+                    </div>
+                    <div class="col-xl-3 col-md-6 col-sm-12 colum show">
+                        <img src="img/mb8.jpg">
+                    </div>
+                    <div class="col-xl-3 col-md-6 col-sm-12 colum show">
+                        <img src="img/mb7.jpg">
+                    </div>
+        </div>
+    </div>
+    <div class="container">
+        <button type="button" class="btn btn-light" id="toggle">More</button>
+    </div>
+
+    <footer class="footer">
+        <div class="container-fluid">
+            <div class="row ftrow">
+                <div class="footer-col">
+                    <h4><img src="img/Logo.png"> Cosulting</h4>
+                    <p>
+                        203, Envato Labs, Behind Alis Steet, <br>
+                        Melbourne, Australia.<br><br>
+                        123-456-789<br>
+                        www.yourdomain.com<br>
+                        Info.deercreative@gmail.com  
+                      </p>
+                </div>
+                <div class="footer-col fl">
+                    <h4>Quick Link</h4>
+                    <div class="fl-l">
+                        <ul>
+                            <li><a href="#">&#187; Home</a></li>
+                            <li><a href="#">&#187; About Us</a></li>
+                            <li><a href="#">&#187; Contact</a></li>
+                            <li><a href="#">&#187; Testimonials</a></li>
+                            <li><a href="#">&#187; Services</a></li>
+                        </ul>
+                    </div>
+                    <div class="fl-l">
+                        <ul>
+                            <li><a href="#">&#187; Project</a></li>
+                            <li><a href="#">&#187; Services</a></li>
+                            <li><a href="#">&#187; FAQ</a></li>
+                            <li><a href="#">&#187; 404 Page</a></li>
+                            <li><a href="#">&#187; Partner</a></li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="footer-col">
+                    <h4>New Latest</h4>
+                    <p>A New Dawn for Corporate<br>Oct 10</p>
+                    <p>A New Dawn for Corporate<br>Oct 10</p>
+                </div>
+                <div class="footer-col">
+                    <h4>Fllow Us</h4>
+                    <div class="social-links">
+                        <a href="#"><i class="fab fa-instagram"></i></a>
+                        <a href="#"><i class="fab fa-facebook-square"></i></a>
+                        <a href="#"><i class="fab fa-youtube"></i></a>
+                    </div>
+                    <div class="social-links">
+                        <a href="#"><i class="fab fa-line"></i></a>
+                        <a href="#"><i class="fab fa-pinterest-square"></i></a>
+                        <a href="#"><i class="fab fa-twitter-square"></i></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+</body>
+</html>
